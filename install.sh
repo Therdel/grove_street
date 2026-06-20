@@ -21,5 +21,11 @@ backup_and_link() {
     ln -s "$dotfile" "$link"
 }
 
+install_fzf() {
+    echo "installing fzf"
+    "$SCRIPT_DIR/fzf/install" --key-bindings --completion --no-update-rc
+}
+
 backup_and_link ~/.bashrc "$SCRIPT_DIR/.bashrc"
 backup_and_link ~/.vimrc "$SCRIPT_DIR/.vimrc"
+install_fzf
