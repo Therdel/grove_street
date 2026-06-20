@@ -1,3 +1,4 @@
 [submodule "fzf"]
 	path = fzf
 	url = https://github.com/junegunn/fzf.git
+	shallow = true
